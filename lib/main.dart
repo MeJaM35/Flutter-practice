@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:english_words/english_words.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final Wordpair = WordPair.random();
     return MaterialApp(
       title: 'Word Generator',
       home: Scaffold(
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
           title: Text('Word Generator'),
         ),
         body: Center(
-          child: Text('Welcome'), // Fixed the capitalization of "Welcome"
+          child: Text(Wordpair.asPascalCase), // Fixed the capitalization of "Welcome"
         ),
       ),
     );
