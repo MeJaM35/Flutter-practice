@@ -20,3 +20,13 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class RandomWordState extends State<RandomWords>{
+
+}
+
+class RandomWords extends StatefulWidget{
+  @override
+  RandomWordState createState() => new RandomWordState();
+
+}
